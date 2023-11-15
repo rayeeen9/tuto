@@ -1,0 +1,56 @@
+Quel est le nom d’hôte du routeur ?
+Routeur
+
+De combien d’interfaces Fast Ethernet le routeur dispose-t-il ?
+4
+
+De combien d’interfaces Gigabit Ethernet le routeur dispose-t-il ?
+2
+
+De combien d’interfaces série le routeur dispose-t-il ?
+2
+
+Quelle est la plage de valeurs affichée pour les lignes vty ?
+0–4
+Pourquoi le routeur répond-il avec le message startup-config is not present ?
+Il affiche ce message car le fichier de configuration n'a pas été enregistré dans la NVRAM. Actuellement, il se trouve uniquement dans la RAM.
+
+Vérifiez les paramètres initiaux en affichant la configuration de R1.
+Quelle commande utilisez-vous ?
+show running-config
+
+Pourquoi chaque routeur devrait-il avoir une bannière de message du jour (MOTD) ?
+Chaque routeur doit avoir une bannière pour avertir les utilisateurs non autorisés que l'accès est interdit. Les bannières MOTD peuvent également être utilisées pour envoyer des messages au personnel du réseau (tels que des arrêts imminents du système ou la personne à contacter pour y accéder).
+
+Si vous n'êtes pas invité à saisir un mot de passe avant d'atteindre l'invite d'exécution de l'utilisateur, quelle commande de ligne de console avez-vous oublié de configurer ?
+R1(config-line)#login
+
+Saisissez les mots de passe nécessaires pour revenir au mode d'exécution privilégié.
+
+Pourquoi le mot de passe secret d'activation permettrait-il l'accès au mode d'exécution privilégié et le mot de passe d'activation ne serait-il plus valide ?
+Le enable " secret password " remplace le enable password. Si les deux sont configurés sur le routeur, vous devez saisir enable secret password pour accéder au mode d'exécution privilégié.
+
+Si vous configurez d'autres mots de passe sur le routeur, sont-ils affichés dans le fichier de configuration sous forme de texte brut ou sous forme cryptée ? Expliquer.
+La commande service password-encryption chiffre tous les mots de passe actuels et futurs.
+
+Quelle commande avez-vous entrée pour enregistrer la configuration dans la NVRAM ?
+copy running-config startup-config
+
+Quelle est la version la plus courte et sans ambiguïté de cette commande ?
+cop r st
+
+Quelle commande affiche le contenu de la NVRAM ?
+show startup-configuration or show start
+
+Examinez le contenu de Flash à l'aide de la commande show flash :
+
+R1# show flash
+
+Combien de fichiers sont actuellement stockés en flash ?
+3
+
+Selon vous, lequel de ces fichiers est l'image IOS ?
+c1900-universalk9-mz.SPA.151-4.M4.bin
+
+Pourquoi pensez-vous que ce fichier est l'image IOS ?
+Les réponses peuvent varier, mais deux indices sont la longueur du fichier par rapport aux autres et le .bin à la fin du nom du fichier.
